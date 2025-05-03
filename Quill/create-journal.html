@@ -14,11 +14,14 @@
         type="text"
         name="title"
         placeholder="Enter title"
+        minlength="3"
+        maxlength="50"
+        required
       />
       <br />
 
       <label for="journal-category">Journal Category</label>
-      <select name="category" id="journal-category">
+      <select name="category" id="journal-category" required>
         <option value="task">Task</option>
         <option value="reflection">Reflection</option>
         <option value="idea">Idea</option>
@@ -32,7 +35,14 @@
       <br />
 
       <label for="journal-entry">Journal Entry</label>
-      <textarea name="entry" id="journal-entry" cols="30" rows="5">
+      <textarea
+        name="entry"
+        id="journal-entry"
+        cols="30"
+        rows="5"
+        minlength="50"
+        required
+      >
 My day was</textarea
       >
 
